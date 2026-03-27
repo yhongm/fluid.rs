@@ -1,0 +1,24 @@
+[package]
+name = "fluid_core"
+version = "0.1.0"
+edition = "2021"
+description = "GPU-accelerated fluid simulation core library (wgpu, no winit dependency)"
+
+# SDK 库接口
+[lib]
+name = "fluid_core"
+path = "src/lib.rs"
+
+[dependencies]
+# GPU core — winit 完全不在依赖里
+wgpu = "0.20"
+# raw-window-handle 让 SDK 接受任何窗口系统提供的句柄
+raw-window-handle = "0.6"
+
+bytemuck  = { version = "1.14", features = ["derive"] }
+log       = "0.4"
+rand      = "0.8"
+
+# egui 渲染器（仅 renderer，不含 egui-winit）
+egui      = "0.28"
+egui-wgpu = "0.28"

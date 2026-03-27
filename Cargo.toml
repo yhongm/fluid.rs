@@ -1,0 +1,10 @@
+[workspace]
+members = ["crates/fluid_core", "demos/desktop_demo"]
+resolver = "2"
+
+[workspace.package]
+edition = "2026"
+license = "MIT"
+
+[profile.release]
+opt-level = 3

@@ -1,0 +1,24 @@
+[package]
+name = "fluid_core_desktop_demo"
+version = "0.1.0"
+edition = "2021"
+description = "Desktop demo application that drives the fluid_core library"
+
+[[bin]]
+name = "fluid_core_desktop_demo"
+path = "src/main.rs"
+
+[dependencies]
+fluid_core = { path = "../../crates/fluid_core" }
+
+# 窗口/事件循环 — 只在应用层
+winit       = "0.29"
+egui-winit  = "0.28"
+egui        = "0.28"
+egui-wgpu   = "0.28"
+wgpu        = "0.20"
+
+pollster    = "0.3"
+env_logger  = "0.11"
+log         = "0.4"
+rand        = "0.8"
