@@ -4,6 +4,10 @@ Real-time GPU fluid simulation in Rust, powered by `wgpu`.
 
 `fluid_core` focuses on simulation and rendering infrastructure, while app/demo code is kept in separate crates.
 
+## Preview
+
+![fluid_core demo](demo.gif)
+
 ## 中文简介
 
 `fluid_core` 是一个面向 Rust 生态的实时 GPU 流体仿真项目。

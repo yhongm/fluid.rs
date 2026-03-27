@@ -28,6 +28,20 @@ Please keep window/event-loop logic in demo crates instead of moving it into the
 - Mention performance implications for simulation/rendering changes
 - Update `api.md` and `README.md` when API behavior changes
 
+## Keep GitHub and crates.io Docs Aligned
+
+Before publishing `fluid_core`, sync repository-level docs into the crate package docs:
+
+```powershell
+./scripts/sync-crate-docs.ps1
+```
+
+Then verify package content with a dry run:
+
+```bash
+cargo publish -p fluid_core --registry crates-io --dry-run
+```
+
 ## Recommended Validation
 
 ```bash

@@ -3,6 +3,9 @@ name = "fluid_core"
 version = "0.1.0"
 edition = "2021"
 description = "GPU-accelerated fluid simulation core library (wgpu, no winit dependency)"
+license = "MIT"
+readme = "README.md"
+documentation = "https://docs.rs/fluid_core"
 
 # SDK 库接口
 [lib]
